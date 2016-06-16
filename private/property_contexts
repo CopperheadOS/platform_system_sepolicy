@@ -66,6 +66,8 @@ ro.boot.btmacaddr       u:object_r:bluetooth_prop:s0
 ro.boot.serialno        u:object_r:serialno_prop:s0
 ro.bt.                  u:object_r:bluetooth_prop:s0
 
+security.deny_new_usb   u:object_r:system_prop:s0
+
 # Boolean property set by system server upon boot indicating
 # if device owner is provisioned.
 ro.device_owner         u:object_r:device_logging_prop:s0
