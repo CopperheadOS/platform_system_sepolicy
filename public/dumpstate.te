@@ -206,6 +206,7 @@ get_prop(dumpstate, device_logging_prop)
 # accesses to the underlying FS.
 allow dumpstate media_rw_data_file:dir getattr;
 allow dumpstate proc_interrupts:file r_file_perms;
+allow dumpstate proc_vmstat:file r_file_perms;
 allow dumpstate proc_zoneinfo:file r_file_perms;
 
 # Create a service for talking back to system_server
