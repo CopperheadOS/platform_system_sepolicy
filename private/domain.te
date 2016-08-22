@@ -86,6 +86,7 @@ userdebug_or_eng(`
 # with other UIDs to these whitelisted domains.
 neverallow {
   domain
+  -init
   -vold
   userdebug_or_eng(`-llkd')
   -dumpstate
