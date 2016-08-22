@@ -7,6 +7,7 @@ allow domain crash_dump:process sigchld;
 # with other UIDs to these whitelisted domains.
 neverallow {
   domain
+  -init
   -vold
   -dumpstate
   -storaged
