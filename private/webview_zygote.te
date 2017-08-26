@@ -15,10 +15,6 @@ tmpfs_domain(webview_zygote);
 allow webview_zygote apk_data_file:dir r_dir_perms;
 allow webview_zygote apk_data_file:file { r_file_perms execute };
 
-# Access to the WebView relro file.
-allow webview_zygote shared_relro_file:dir search;
-allow webview_zygote shared_relro_file:file r_file_perms;
-
 # Set the UID/GID of the process.
 allow webview_zygote self:global_capability_class_set { setgid setuid };
 # Drop capabilities from bounding set.
