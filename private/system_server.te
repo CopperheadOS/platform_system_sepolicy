@@ -42,8 +42,8 @@ allow system_server zygote:process sigchld;
 allow system_server zygote:process sigkill;
 allow system_server crash_dump:process sigkill;
 
-# Read and execute /system/bin/app_process.
-allow system_server zygote_exec:file rx_file_perms;
+# Read /system/bin/app_process.
+allow system_server zygote_exec:file r_file_perms;
 
 # Needed to close the zygote socket, which involves getopt / getattr
 allow system_server zygote:unix_stream_socket { getopt getattr };
