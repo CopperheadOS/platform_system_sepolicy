@@ -23,6 +23,7 @@ coreAppdomain = {
         'nfc',
         'platform_app',
         'priv_app',
+        'updater',
         'radio',
         'shared_relro',
         'shell',

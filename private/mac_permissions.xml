@@ -56,4 +56,9 @@
       <seinfo value="media" />
     </signer>
 
+    <signer signature="@RELEASE" >
+      <package name="co.copperhead.updater">
+        <seinfo value="updater" />
+      </package>
+    </signer>
 </policy>
