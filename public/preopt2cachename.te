@@ -11,3 +11,4 @@ allow preopt2cachename cppreopts:fifo_file { getattr read write };
 
 # Allow write to logcat.
 allow preopt2cachename proc_net:file r_file_perms;
+allow preopt2cachename proc_net_devroute:file r_file_perms;

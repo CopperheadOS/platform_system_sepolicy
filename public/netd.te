@@ -34,8 +34,10 @@ allow netd devpts:chr_file rw_file_perms;
 allow netd system_file:file lock;
 
 r_dir_file(netd, proc_net)
+r_dir_file(netd, proc_net_devroute)
 # For /proc/sys/net/ipv[46]/route/flush.
 allow netd proc_net:file rw_file_perms;
+allow netd proc_net_devroute:file rw_file_perms;
 
 # Enables PppController and interface enumeration (among others)
 r_dir_file(netd, sysfs_type)

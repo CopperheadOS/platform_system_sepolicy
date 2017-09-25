@@ -14,6 +14,7 @@ allow hostapd sysfs:lnk_file r_file_perms;
 
 # Allow hostapd to access /proc/net/psched
 allow hostapd proc_net:file { getattr open read };
+allow hostapd proc_net_devroute:file { getattr open read };
 
 # Various socket permissions.
 allowxperm hostapd self:udp_socket ioctl priv_sock_ioctls;

@@ -264,7 +264,9 @@ allow init proc:file w_file_perms;
 
 # Write to /proc/sys/net/ping_group_range and other /proc/sys/net files.
 r_dir_file(init, proc_net)
+r_dir_file(init, proc_net_devroute)
 allow init proc_net:file w_file_perms;
+allow init proc_net_devroute:file w_file_perms;
 allow init self:capability net_admin;
 
 # Write to /proc/sysrq-trigger.

@@ -10,3 +10,4 @@ net_domain(mdnsd)
 
 # Read from /proc/net
 r_dir_file(mdnsd, proc_net)
+r_dir_file(mdnsd, proc_net_devroute)

@@ -36,6 +36,7 @@ wakelock_use(rild)
 
 r_dir_file(rild, proc)
 r_dir_file(rild, proc_net)
+r_dir_file(rild, proc_net_devroute)
 r_dir_file(rild, sysfs_type)
 r_dir_file(rild, system_file)
 
