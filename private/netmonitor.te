@@ -49,3 +49,5 @@ allow netmonitor proc_tty_drivers:file r_file_perms;
 allow netmonitor apk_data_file:file execmod;
 allow netmonitor app_data_file:file execmod;
 allow netmonitor asec_public_file:file execmod;
+
+r_dir_file(netmonitor, proc_net)
