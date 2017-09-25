@@ -31,6 +31,7 @@ coreAppdomain = {
         'untrusted_app',
         'untrusted_app_25',
         'untrusted_v2_app',
+        'netmonitor'
         }
 coredomainWhitelist = {
         'adbd',

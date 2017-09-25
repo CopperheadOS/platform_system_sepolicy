@@ -14,6 +14,9 @@
     hal_wifi_offload_hwservice
     kmsg_debug_device
     mediaprovider_tmpfs
+    netmonitor
+    netmonitor_devpts
+    netmonitor_tmpfs
     netd_stable_secret_prop
     package_native_service
     sysfs_fs_ext4_features

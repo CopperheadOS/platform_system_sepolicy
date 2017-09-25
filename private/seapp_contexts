@@ -107,4 +107,5 @@ user=_app isV2App=true isEphemeralApp=true domain=ephemeral_app type=app_data_fi
 user=_app seinfo=updater isPrivApp=true domain=updater type=app_data_file levelFrom=user
 user=_app isPrivApp=true domain=priv_app type=app_data_file levelFrom=user
 user=_app minTargetSdkVersion=26 domain=untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=netmonitor domain=netmonitor type=app_data_file levelFrom=user
 user=_app domain=untrusted_app_25 type=app_data_file levelFrom=user

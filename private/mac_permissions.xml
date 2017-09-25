@@ -61,4 +61,11 @@
         <seinfo value="updater" />
       </package>
     </signer>
+
+    <signer signature="@RELEASE" >
+      <package name="org.secuso.privacyfriendlynetmonitor">
+        <seinfo value="netmonitor" />
+      </package>
+    </signer>
+
 </policy>
