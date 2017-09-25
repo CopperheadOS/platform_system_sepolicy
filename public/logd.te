@@ -7,6 +7,7 @@ r_dir_file(logd, cgroup)
 r_dir_file(logd, proc_kmsg)
 r_dir_file(logd, proc_meminfo)
 r_dir_file(logd, proc_net)
+r_dir_file(logd, proc_net_devroute)
 
 allow logd self:global_capability_class_set { setuid setgid setpcap sys_nice audit_control };
 allow logd self:global_capability2_class_set syslog;

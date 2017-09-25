@@ -7,6 +7,7 @@ allow netutils_wrapper self:global_capability_class_set net_raw;
 
 allow netutils_wrapper system_file:file { execute execute_no_trans };
 allow netutils_wrapper proc_net:file { open read getattr };
+allow netutils_wrapper proc_net_devroute:file { open read getattr };
 allow netutils_wrapper self:rawip_socket create_socket_perms;
 allow netutils_wrapper self:udp_socket create_socket_perms;
 allow netutils_wrapper self:global_capability_class_set net_admin;

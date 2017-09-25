@@ -22,6 +22,7 @@ allow wificond self:netlink_socket create_socket_perms_no_ioctl;
 allow wificond self:netlink_generic_socket create_socket_perms_no_ioctl;
 
 r_dir_file(wificond, proc_net)
+r_dir_file(wificond, proc_net_devroute)
 
 # allow wificond to check permission for dumping logs
 allow wificond permission_service:service_manager find;

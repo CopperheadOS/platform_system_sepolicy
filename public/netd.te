@@ -42,8 +42,10 @@ allow netd qtaguid_proc:file rw_file_perms;
 allow netd qtaguid_device:chr_file r_file_perms;
 
 r_dir_file(netd, proc_net)
+r_dir_file(netd, proc_net_devroute)
 # For /proc/sys/net/ipv[46]/route/flush.
 allow netd proc_net:file rw_file_perms;
+allow netd proc_net_devroute:file rw_file_perms;
 
 # Enables PppController and interface enumeration (among others)
 allow netd sysfs:dir r_dir_perms;

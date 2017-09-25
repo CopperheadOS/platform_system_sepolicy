@@ -161,6 +161,7 @@ allow dumpstate {
   proc_meminfo
   proc_modules
   proc_net
+  proc_net_devroute
   proc_pipe_conf
   proc_pagetypeinfo
   proc_qtaguid_stat

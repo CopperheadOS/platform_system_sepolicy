@@ -300,6 +300,7 @@ allow init {
   proc_hung_task
   proc_extra_free_kbytes
   proc_net
+  proc_net_devroute
   proc_max_map_count
   proc_min_free_order_shift
   proc_overcommit_memory

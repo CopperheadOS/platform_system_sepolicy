@@ -79,3 +79,4 @@ neverallow ephemeral_app { sdcard_type media_rw_data_file }:dir search;
 # Avoid reads to proc_net, it contains too much device wide information about
 # ongoing connections.
 neverallow ephemeral_app proc_net:file no_rw_file_perms;
+neverallow ephemeral_app proc_net_devroute:file no_rw_file_perms;
