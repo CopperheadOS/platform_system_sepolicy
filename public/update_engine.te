@@ -31,7 +31,6 @@ binder_use(update_engine)
 add_service(update_engine, update_engine_service)
 
 # Allow update_engine to call the callback function provided by updater.
-binder_call(update_engine, priv_app)
 binder_call(update_engine, updater)
 
 # Read OTA zip file at /data/ota_package/.
