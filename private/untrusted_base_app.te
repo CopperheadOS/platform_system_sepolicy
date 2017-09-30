@@ -32,9 +32,6 @@ allow untrusted_base_app system_server:udp_socket { connect getattr read recvfro
 # Used by: https://play.google.com/store/apps/details?id=jackpal.androidterm
 create_pty(untrusted_base_app)
 
-# Application-specific JIT compilers
-allow untrusted_base_app self:process execmem;
-
 neverallow untrusted_base_app system_server:udp_socket {
         accept append bind create getopt ioctl listen lock name_bind
         relabelfrom relabelto setattr setopt shutdown };
