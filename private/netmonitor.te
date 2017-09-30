@@ -45,9 +45,4 @@ allow netmonitor proc_misc:file r_file_perms;
 # This will go away in a future Android release
 allow netmonitor proc_tty_drivers:file r_file_perms;
 
-# Legacy text relocations
-allow netmonitor apk_data_file:file execmod;
-allow netmonitor app_data_file:file execmod;
-allow netmonitor asec_public_file:file execmod;
-
 r_dir_file(netmonitor, proc_net)
