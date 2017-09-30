@@ -35,6 +35,10 @@ create_pty(untrusted_app)
 # Application-specific JIT compilers
 allow untrusted_app self:process execmem;
 
+# Some apps ship with shared libraries and binaries that they write out
+# to their sandbox directory and then execute.
+allow untrusted_app app_data_file:file rx_file_perms;
+
 neverallow untrusted_app system_server:udp_socket {
         accept append bind create getopt ioctl listen lock name_bind
         relabelfrom relabelto setattr setopt shutdown };
