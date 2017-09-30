@@ -35,6 +35,9 @@ allow ephemeral_app surfaceflinger_service:service_manager find;
 allow ephemeral_app radio_service:service_manager find;
 allow ephemeral_app ephemeral_app_api_service:service_manager find;
 
+# Application-specific JIT compilers
+allow ephemeral_app self:process execmem;
+
 ###
 ### neverallow rules
 ###

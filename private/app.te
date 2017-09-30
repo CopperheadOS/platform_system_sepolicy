@@ -11,9 +11,6 @@
 # Read system properties managed by zygote.
 allow appdomain zygote_tmpfs:file read;
 
-# WebView and other application-specific JIT compilers
-allow appdomain self:process execmem;
-
 # Receive and use open file descriptors inherited from zygote.
 allow appdomain zygote:fd use;
 
