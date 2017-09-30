@@ -44,6 +44,3 @@ allow untrusted_base_app_25 proc_misc:file r_file_perms;
 # https://github.com/strazzere/anti-emulator/blob/master/AntiEmulator/src/diff/strazzere/anti/emulator/FindEmulator.java
 # This will go away in a future Android release
 allow untrusted_base_app_25 proc_tty_drivers:file r_file_perms;
-
-# Application-specific JIT compilers
-allow untrusted_base_app_25 self:process execmem;
