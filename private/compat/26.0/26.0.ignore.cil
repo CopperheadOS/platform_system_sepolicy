@@ -130,6 +130,14 @@
     traced_producer_socket
     traced_tmpfs
     untrusted_app_all_devpts
+    untrusted_base_app
+    untrusted_base_app_devpts
+    untrusted_base_app_tmpfs
+    untrusted_base_app_25
+    untrusted_base_app_25_devpts
+    untrusted_base_app_25_tmpfs
+    untrusted_v2_base_app
+    untrusted_v2_base_app_tmpfs
     update_engine_log_data_file
     updater
     updater_devpts

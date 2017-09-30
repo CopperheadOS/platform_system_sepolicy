@@ -115,5 +115,7 @@ user=_app seinfo=updater isPrivApp=true domain=updater type=app_data_file levelF
 user=_app isPrivApp=true domain=priv_app type=app_data_file levelFrom=user
 user=_app minTargetSdkVersion=28 domain=untrusted_app type=app_data_file levelFrom=all
 user=_app minTargetSdkVersion=26 domain=untrusted_app_27 type=app_data_file levelFrom=user
+user=_app seinfo=base minTargetSdkVersion=26 domain=untrusted_base_app type=app_data_file levelFrom=user
 user=_app seinfo=netmonitor domain=netmonitor type=app_data_file levelFrom=user
+user=_app seinfo=base domain=untrusted_base_app_25 type=app_data_file levelFrom=user
 user=_app domain=untrusted_app_25 type=app_data_file levelFrom=user
