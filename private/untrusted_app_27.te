@@ -26,3 +26,7 @@ app_domain(untrusted_app_27)
 untrusted_app_domain(untrusted_app_27)
 net_domain(untrusted_app_27)
 bluetooth_domain(untrusted_app_27)
+
+# Some apps ship with shared libraries and binaries that they write out
+# to their sandbox directory and then execute.
+allow untrusted_app_27 app_data_file:file rx_file_perms;
