@@ -27,4 +27,5 @@ bluetooth_domain(untrusted_app)
 # Some apps ship with shared libraries and binaries that they write out
 # to their sandbox directory and then execute.
 allow untrusted_app app_data_file:file rx_file_perms;
-k
+
+allow untrusted_app dalvikcache_data_file:file execute;

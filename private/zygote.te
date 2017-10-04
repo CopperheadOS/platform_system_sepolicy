@@ -42,10 +42,6 @@ allow zygote dalvikcache_data_file:lnk_file create_file_perms;
 allow zygote resourcecache_data_file:dir rw_dir_perms;
 allow zygote resourcecache_data_file:file create_file_perms;
 
-# When WITH_DEXPREOPT is true, the zygote does not load executable content from
-# /data/dalvik-cache.
-allow { zygote with_dexpreopt(`-zygote') } dalvikcache_data_file:file execute;
-
 # Execute idmap and dex2oat within zygote's own domain.
 # TODO:  Should either of these be transitioned to the same domain
 # used by installd or stay in-domain for zygote?
@@ -130,7 +126,6 @@ neverallow zygote ~{ appdomain system_server webview_zygote }:process dyntransit
 # Zygote should never execute anything from /data except for /data/dalvik-cache files.
 neverallow zygote {
   data_file_type
-  -dalvikcache_data_file # map PROT_EXEC
 }:file no_x_file_perms;
 
 # Do not allow access to Bluetooth-related system properties and files

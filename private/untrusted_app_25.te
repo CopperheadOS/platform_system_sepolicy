@@ -49,3 +49,5 @@ allow untrusted_app_25 asec_public_file:file execmod;
 # Some apps ship with shared libraries and binaries that they write out
 # to their sandbox directory and then execute.
 allow untrusted_app_25 app_data_file:file rx_file_perms;
+
+allow untrusted_app_25 dalvikcache_data_file:file execute;
