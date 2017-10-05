@@ -12,6 +12,8 @@
     hal_neuralnetworks_hwservice
     hal_tetheroffload_hwservice
     hal_wifi_offload_hwservice
+    isolated_base_app
+    isolated_base_app_tmpfs
     kmsg_debug_device
     mediaprovider_tmpfs
     netmonitor
