@@ -10,11 +10,6 @@ typeattribute webview_zygote mlstrustedsubject;
 # a domain macro.
 tmpfs_domain(webview_zygote);
 
-# Allow reading/executing installed binaries to enable preloading the
-# installed WebView implementation.
-allow webview_zygote apk_data_file:dir r_dir_perms;
-allow webview_zygote apk_data_file:file { r_file_perms execute };
-
 # Set the UID/GID of the process.
 allow webview_zygote self:global_capability_class_set { setgid setuid };
 # Drop capabilities from bounding set.
