@@ -57,6 +57,8 @@
     hal_wifi_hostapd_hwservice
     incident_helper
     incident_helper_exec
+    isolated_base_app
+    isolated_base_app_tmpfs
     last_boot_reason_prop
     lowpan_device
     lowpan_prop

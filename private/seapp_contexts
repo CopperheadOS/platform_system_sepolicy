@@ -84,8 +84,9 @@ neverallow user=((?!shared_relro).)* domain=shared_relro
 
 # neverallow non-isolated uids into isolated_app domain
 # and vice versa
-neverallow user=_isolated domain=((?!isolated_app).)*
+neverallow user=_isolated domain=((?!isolated_(base_)?app).)*
 neverallow user=((?!_isolated).)* domain=isolated_app
+neverallow user=((?!_isolated).)* domain=isolated_base_app
 
 # uid shell should always be in shell domain, however non-shell
 # uid's can be in shell domain
@@ -107,6 +108,7 @@ user=secure_element seinfo=platform domain=secure_element levelFrom=all
 user=radio seinfo=platform domain=radio type=radio_data_file
 user=shell seinfo=platform domain=shell name=com.android.shell type=shell_data_file
 user=webview_zygote seinfo=webview_zygote domain=webview_zygote
+user=_isolated seinfo=base domain=isolated_base_app levelFrom=all
 user=_isolated domain=isolated_app levelFrom=all
 user=_app seinfo=media domain=mediaprovider name=android.process.media type=app_data_file levelFrom=user
 user=_app seinfo=platform domain=platform_app type=app_data_file levelFrom=user
