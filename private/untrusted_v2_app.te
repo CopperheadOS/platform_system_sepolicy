@@ -43,5 +43,6 @@ allow untrusted_v2_app self:process ptrace;
 
 # Application-specific JIT compilers
 allow untrusted_v2_app self:process execmem;
+auditallow untrusted_v2_app self:process execmem;
 
 allow untrusted_v2_app dalvikcache_data_file:file execute;

@@ -34,6 +34,7 @@ create_pty(untrusted_app)
 
 # Application-specific JIT compilers
 allow untrusted_app self:process execmem;
+auditallow untrusted_app self:process execmem;
 
 # Some apps ship with shared libraries and binaries that they write out
 # to their sandbox directory and then execute.
