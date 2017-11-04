@@ -8,7 +8,7 @@
 ###
 
 # WebView and other application-specific JIT compilers
-allow { appdomain -priv_app } self:process execmem;
+allow { appdomain -priv_app -ephemeral_app } self:process execmem;
 
 # Receive and use open file descriptors inherited from zygote.
 allow appdomain zygote:fd use;
