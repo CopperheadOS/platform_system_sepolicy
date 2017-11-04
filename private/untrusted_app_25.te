@@ -55,5 +55,6 @@ auditallow untrusted_app_25 self:process execmem;
 # Some apps ship with shared libraries and binaries that they write out
 # to their sandbox directory and then execute.
 allow untrusted_app_25 app_data_file:file rx_file_perms;
+auditallow untrusted_app_25 app_data_file:file execute;
 
 allow untrusted_app_25 dalvikcache_data_file:file execute;
