@@ -46,4 +46,7 @@ allow untrusted_v2_app traced:fd use;
 allow untrusted_v2_app traced_tmpfs:file { read write getattr map };
 unix_socket_connect(untrusted_v2_app, traced_producer, traced)
 
+# Application-specific JIT compilers
+auditallow untrusted_v2_app self:process execmem;
+
 allow untrusted_v2_app dalvikcache_data_file:file execute;
