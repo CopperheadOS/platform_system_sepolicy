@@ -81,6 +81,8 @@ allow system_app keystore:keystore_key {
     user_changed
 };
 
+allow system_app selinuxfs:file r_file_perms;
+
 # /sys access
 r_dir_file(system_app, sysfs_type)
 
