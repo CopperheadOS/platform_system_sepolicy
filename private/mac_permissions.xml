@@ -66,16 +66,4 @@
       <seinfo value="base" />
     </signer>
 
-    <signer signature="@RELEASE" >
-      <package name="co.copperhead.updater">
-        <seinfo value="updater" />
-      </package>
-    </signer>
-
-    <signer signature="@RELEASE" >
-      <package name="org.secuso.privacyfriendlynetmonitor">
-        <seinfo value="netmonitor" />
-      </package>
-    </signer>
-
 </policy>
