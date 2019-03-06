@@ -141,9 +141,9 @@
     untrusted_v2_base_app
     untrusted_v2_base_app_tmpfs
     update_engine_log_data_file
-    updater
-    updater_devpts
-    updater_tmpfs
+    updater_app
+    updater_app_devpts
+    updater_app_tmpfs
     vendor_default_prop
     vendor_security_patch_level_prop
     usbd

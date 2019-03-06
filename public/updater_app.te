@@ -2,4 +2,4 @@
 ### A domain for further sandboxing privileged apps.
 ###
 
-type updater, domain;
+type updater_app, domain;

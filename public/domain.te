@@ -1180,7 +1180,7 @@ neverallow {
   untrusted_app_all # finer-grained rules for appdomain are listed below
   ephemeral_app
   priv_app
-  updater
+  updater_app
 } system_app_data_file:dir_file_class_set { create unlink open };
 
 

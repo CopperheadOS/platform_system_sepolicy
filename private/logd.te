@@ -32,7 +32,7 @@ neverallow {
   -bluetooth
   -platform_app
   -priv_app
-  -updater
+  -updater_app
   -radio
   -shell
   userdebug_or_eng(`-su')

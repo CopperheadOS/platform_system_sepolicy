@@ -41,8 +41,8 @@ dontaudit update_engine kernel:system module_request;
 binder_use(update_engine)
 add_service(update_engine, update_engine_service)
 
-# Allow update_engine to call the callback function provided by updater.
-binder_call(update_engine, updater)
+# Allow update_engine to call the callback function provided by updater_app.
+binder_call(update_engine, updater_app)
 
 # Read OTA zip file at /data/ota_package/.
 allow update_engine ota_package_file:file r_file_perms;
