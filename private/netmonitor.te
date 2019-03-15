@@ -26,10 +26,6 @@ untrusted_app_domain(netmonitor)
 net_domain(netmonitor)
 bluetooth_domain(netmonitor)
 
-# Allow the allocation and use of ptys
-# Used by: https://play.google.com/store/apps/details?id=jackpal.androidterm
-create_pty(netmonitor)
-
 # b/34115651 - net.dns* properties read
 # This will go away in a future Android release
 get_prop(netmonitor, net_dns_prop)

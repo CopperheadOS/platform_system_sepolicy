@@ -28,10 +28,6 @@ bluetooth_domain(untrusted_base_app)
 # modify them other than to connect
 allow untrusted_base_app system_server:udp_socket { connect getattr read recvfrom sendto write };
 
-# Allow the allocation and use of ptys
-# Used by: https://play.google.com/store/apps/details?id=jackpal.androidterm
-create_pty(untrusted_base_app)
-
 neverallow untrusted_base_app system_server:udp_socket {
         accept append bind create getopt ioctl listen lock name_bind
         relabelfrom relabelto setattr setopt shutdown };
