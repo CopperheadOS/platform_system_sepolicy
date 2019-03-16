@@ -34,14 +34,9 @@ allow untrusted_v2_base_app mediametrics_service:service_manager find;
 allow untrusted_v2_base_app mediadrmserver_service:service_manager find;
 allow untrusted_v2_base_app nfc_service:service_manager find;
 allow untrusted_v2_base_app radio_service:service_manager find;
+allow untrusted_v2_base_app surfaceflinger_service:service_manager find;
 # TODO: potentially provide a tighter list of services here
 allow untrusted_v2_base_app app_api_service:service_manager find;
 
 # gdbserver for ndk-gdb ptrace attaches to app process.
 allow untrusted_v2_base_app self:process ptrace;
-
-# Write app-specific trace data to the Perfetto traced damon. This requires
-# connecting to its producer socket and obtaining a (per-process) tmpfs fd.
-allow untrusted_v2_base_app traced:fd use;
-allow untrusted_v2_base_app traced_tmpfs:file { read write getattr map };
-unix_socket_connect(untrusted_v2_base_app, traced_producer, traced)

@@ -113,13 +113,11 @@ user=_isolated domain=isolated_app levelFrom=all
 user=_app seinfo=media domain=mediaprovider name=android.process.media type=app_data_file levelFrom=user
 user=_app seinfo=platform domain=platform_app type=app_data_file levelFrom=user
 user=_app isV2App=true isEphemeralApp=true domain=ephemeral_app type=app_data_file levelFrom=all
+user=_app name=co.copperhead.updater isPrivApp=true domain=updater_app type=app_data_file levelFrom=user
 user=_app isPrivApp=true domain=priv_app type=app_data_file levelFrom=user
-user=_app seinfo=base minTargetSdkVersion=28 domain=untrusted_base_app type=app_data_file levelFrom=all
-user=_app seinfo=base minTargetSdkVersion=26 domain=untrusted_base_app_27 type=app_data_file levelFrom=user
-user=_app seinfo=base domain=untrusted_base_app_25 type=app_data_file levelFrom=user
 user=_app minTargetSdkVersion=28 domain=untrusted_app type=app_data_file levelFrom=all
 user=_app minTargetSdkVersion=26 domain=untrusted_app_27 type=app_data_file levelFrom=user
+user=_app seinfo=base minTargetSdkVersion=26 domain=untrusted_base_app type=app_data_file levelFrom=user
+user=_app name=org.secuso.privacyfriendlynetmonitor domain=netmonitor type=app_data_file levelFrom=user
+user=_app seinfo=base domain=untrusted_base_app_25 type=app_data_file levelFrom=user
 user=_app domain=untrusted_app_25 type=app_data_file levelFrom=user
-
-user=_app seinfo=base name=co.copperhead.updater isPrivApp=true domain=updater_app type=app_data_file levelFrom=user
-user=_app seinfo=base name=org.secuso.privacyfriendlynetmonitor domain=netmonitor type=app_data_file levelFrom=user
