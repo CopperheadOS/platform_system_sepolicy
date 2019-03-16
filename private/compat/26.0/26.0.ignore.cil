@@ -138,6 +138,9 @@
     untrusted_base_app_25
     untrusted_base_app_25_devpts
     untrusted_base_app_25_tmpfs
+    untrusted_base_app_27
+    untrusted_base_app_27_devpts
+    untrusted_base_app_27_tmpfs
     untrusted_v2_base_app
     untrusted_v2_base_app_tmpfs
     update_engine_log_data_file
