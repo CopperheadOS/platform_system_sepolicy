@@ -72,11 +72,6 @@ userdebug_or_eng(`
 allow updater_app vold:fd use;
 allow updater_app fuse_device:chr_file { read write };
 
-# /sys and /proc access
-r_dir_file(updater_app, sysfs_type)
-r_dir_file(updater_app, proc)
-r_dir_file(updater_app, rootfs)
-
 # Allow GMS core to open kernel config for OTA matching through libvintf
 allow updater_app config_gz:file { open read getattr };
 
